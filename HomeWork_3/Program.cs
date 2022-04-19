@@ -42,9 +42,6 @@ int MSB (int n)                    //selection most digit
 Console.Write("Input number: ");                    //input data
 int number = Convert.ToInt32(Console.ReadLine());
 
-bool v = Palindrom(number);
-
-
 if (number < 10000 || number > 99999)               //check range
     Console.Write("Wrong number!");
 else
