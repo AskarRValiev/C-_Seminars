@@ -4,10 +4,10 @@
 // про массивы и оставил ограниченный размер
 
 /*
-void AmountPositive(double[] array)             //проверка условия
+void AmountPositive(int[] array)             //решение
 {
-    double count = 0;
-    for (double i = 0; i < array.Length; i++)
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > 0)
             count++;
@@ -15,11 +15,11 @@ void AmountPositive(double[] array)             //проверка услови�
     Console.WriteLine("Amounts of digits more than 0 is: " + count);
 }
 
-double[] InputNumbers()                        //метод ввода чисел
+int[] InputNumbers()                        //метод ввода чисел
 {
-    double[] array = new double [10]; 
+    int[] array = new int [10]; 
     Console.WriteLine("Input 10 digits: ");
-    for (double i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         array[i] = Convert.ToInt32(Console.ReadLine());
     }   
@@ -27,9 +27,9 @@ double[] InputNumbers()                        //метод ввода чисе�
     return array;
 }
 
-void PrintArray (double[] array)
+void PrintArray (int[] array)
 {
-    for (double i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
     }
@@ -41,11 +41,11 @@ AmountPositive(InputNumbers());
 
 // Task 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 /*
-double[] ToBinary(double num)             //решение задачи
+int[] ToBinary(int num)             //решение задачи
 {
 
-    double[] array = new double[16];
-    for(double i = 15; i != 0; i--)
+    int[] array = new int[16];
+    for(int i = 15; i != 0; i--)
     {
         if (num % 2 == 0)
         {;
@@ -61,10 +61,10 @@ double[] ToBinary(double num)             //решение задачи
     return array;
 }
 
-void PrintArray (double[] array, double num)
+void PrintArray (int[] array, int num)
 {
     Console.Write(num + " to binary is: 0b");
-    for (double i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i]);
     }
@@ -72,8 +72,8 @@ void PrintArray (double[] array, double num)
 }
 
 Console.Write("Input number less or equal 32 767: ");
-double n = Convert.ToInt16(Console.ReadLine());
-double[] binaryArray = ToBinary(n);
+int n = Convert.ToInt16(Console.ReadLine());
+int[] binaryArray = ToBinary(n);
 PrintArray(binaryArray, n);
 */
 
@@ -106,5 +106,5 @@ else
 {
     double[] coordinate = new double[2];
     coordinate = GraphCross(k1, k2, b1, b2);
-    Console.WriteLine("Cross coordinate: x =" + coordinate[0] + " y =" + coordinate[1]);
+    Console.WriteLine("Cross coordinate: x = " + coordinate[0] + " y = " + coordinate[1]);
 }
